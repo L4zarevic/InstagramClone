@@ -47,6 +47,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     }
 
 
+    //OnClick method for signup and login button
     @Override
     public void onClick(View view) {
 
@@ -59,7 +60,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                 appUser.setUsername(edtUsername.getText().toString());
                 appUser.setPassword(edtPass.getText().toString());
 
-                //Creating progress dialog
+                //Creating progress dialog which showing when tap sing up button
                 final ProgressDialog progressDialog = new ProgressDialog(this);
                 progressDialog.setMessage("Signing up "+edtUsername.getText().toString());
                 progressDialog.show();
