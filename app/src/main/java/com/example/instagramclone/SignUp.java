@@ -2,6 +2,7 @@ package com.example.instagramclone;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -67,7 +68,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                 allKickBoxers = "";
                 ParseQuery<ParseObject> queryAll = ParseQuery.getQuery("KickBoxer");
                 //queryAll.whereGreaterThan("punchPower",3000);
-                queryAll.whereGreaterThanOrEqualTo("punchPower",3000);
+                queryAll.whereGreaterThanOrEqualTo("punchPower", 3000);
                 queryAll.setLimit(1);
                 queryAll.findInBackground(new FindCallback<ParseObject>() {
                     @Override
@@ -92,9 +93,10 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
             @Override
             public void onClick(View v) {
 
+                Intent intent = new Intent(SignUp.this, SignUpLoginActivity.class);
+                startActivity(intent);
             }
         });
-
 
 
     }
