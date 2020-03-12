@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         btnLogIn = findViewById(R.id.btnLogIn_LogInActivity);
 
         btnLogIn.setOnClickListener(this);
-        btnLogIn.setOnClickListener(this);
+        btnSignUp.setOnClickListener(this);
 
         //Token session check
         if (ParseUser.getCurrentUser() != null) {

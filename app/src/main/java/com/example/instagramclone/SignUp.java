@@ -74,7 +74,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                         edtUsername.getText().toString().trim().equals("") ||
                         edtPass.getText().toString().trim().equals("")) {
 
-                    FancyToast.makeText(SignUp.this, "Email,Username , Password is required!", Toast.LENGTH_SHORT, FancyToast.INFO, true).show();
+                    FancyToast.makeText(SignUp.this, "Email,Username,Password is required!", Toast.LENGTH_SHORT, FancyToast.INFO, true).show();
 
                 } else {
 
